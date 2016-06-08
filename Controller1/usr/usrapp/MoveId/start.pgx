@@ -3,8 +3,9 @@
   <Program name="start">
     <Code><![CDATA[begin
   
-  call SameInstruct()
+  // call SameInstruct()
   
+  call TestSetmoveid()
   
 end]]></Code>
   </Program>

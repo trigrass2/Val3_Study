@@ -5,6 +5,7 @@
     <Program file="SameInstruct.pgx" />
     <Program file="start.pgx" />
     <Program file="stop.pgx" />
+    <Program file="TestSetmoveid.pgx" />
   </Programs>
   <Database>
     <Data file="MoveId.dtx" />
