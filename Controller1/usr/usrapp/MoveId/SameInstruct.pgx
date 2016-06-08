@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="SameInstruct">
+    <Locals>
+      <Local name="l_nIndex" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //清空运动堆栈中已有运动指令，会自动把moveid设置为0
+  resetMotion()
+  
+  
+  //清除屏幕
+  cls()
+  
+  //强制设置到用户界面
+  userPage()
+  
+  
+  //循环语句
+  for l_nIndex=0 to 100
+    mMdesc.blend=off
+    movej(jJ,tTool,mMdesc)
+    
+    waitEndMove() 
+    gotoxy(0,0)
+    put("MOVEID的值是:"+toString(".3",getMoveId()))
+  endFor
+  
+  
+  
+  
+  
+end
+]]></Code>
+  </Program>
+</Programs>
