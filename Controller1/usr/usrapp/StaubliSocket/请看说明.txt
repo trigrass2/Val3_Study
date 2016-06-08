@@ -1,0 +1,7 @@
+1.适用Val3 7.x系统
+2.把sio.cfx拷贝到usr/configs
+3.先运行SocketTool的服务器TCP Server，然后运行val3中的staubliSocket,
+最后运行SocketTool的客户端Tcp client
+4.在sockettool的服务器tcp server中输入消息（中文机器人界面会显示乱码）
+5.示例程序中的端口号服务器是2000，客户端是1000
+因此在socket调试工具中的TCP服务器端口要设置为1000，调试工具的TCP客户端设置为2000

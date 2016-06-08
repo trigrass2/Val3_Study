@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Language xmlns="http://www.staubli.com/robotics/VAL3/1" >
+  <Version>s7.9</Version>
+  <Data>
+  </Data>
+  <Functions>
+    <Func>
+      <Name>$coggingParams</Name>
+      <Return>bool</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$coggingEnable</Name>
+      <Return>bool</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setOffset</Name>
+      <Return>bool</Return>
+      <Param index="0" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getDrvForce</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$loadTraj</Name>
+      <Return>void</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$moveTraj</Name>
+      <Return>num</Return>
+      <Param index="0" type="mdesc" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$readTraj</Name>
+      <Return>bool</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="joint" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$writeTraj</Name>
+      <Return>bool</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$velFrame</Name>
+      <Return>num</Return>
+      <Param index="0" type="frame" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="mdesc" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$velTool</Name>
+      <Return>num</Return>
+      <Param index="0" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="mdesc" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$velJoint</Name>
+      <Return>void</Return>
+      <Param index="0" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="mdesc" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setVelCmd</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$rotAngle</Name>
+      <Return>num</Return>
+      <Param index="0" type="trsf" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$getRot</Name>
+      <Return>num</Return>
+      <Param index="0" type="trsf" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$setRot</Name>
+      <Return>trsf</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$drvSelect</Name>
+      <Return>num</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$drvSendCommand</Name>
+      <Return>num</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$drvGetAnswer</Name>
+      <Return>num</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="string" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$motionState</Name>
+      <Return>num</Return>
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$getSpeedFbk</Name>
+      <Return>num</Return>
+      <Param index="0" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$getSpeedFbk</Name>
+      <Return>num</Return>
+      <Param index="0" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="frame" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="5" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="6" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="7" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getSpeedCmd</Name>
+      <Return>num</Return>
+      <Param index="0" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$getSpeedCmd</Name>
+      <Return>num</Return>
+      <Param index="0" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="frame" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="5" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="6" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="7" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getJntFbk</Name>
+      <Return>joint</Return>
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$getJntPosRef</Name>
+      <Return>joint</Return>
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$getJntSpeedCmd</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getJntSpeedRef</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getJntSpeedFbk</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getPosFbk</Name>
+      <Return>point</Return>
+      <Param index="0" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="frame" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$getMotMoveId</Name>
+      <Return>num</Return>
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$getMoveType</Name>
+      <Return>num</Return>
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$stopMove</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$waitEndMove</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getMovejData</Name>
+      <Return>num</Return>
+      <Param index="0" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="mdesc" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getMoveltData</Name>
+      <Return>num</Return>
+      <Param index="0" type="point" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="point" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="mdesc" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getMoveIdVel</Name>
+      <Return>num</Return>
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$initFirFilter</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$initFirFilter2</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Param index="3" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$firFilter</Name>
+      <Return>num</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Param index="1" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getBoxcarDelay</Name>
+      <Return>num</Return>
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$setBoxcarFreq</Name>
+      <Return>void</Return>
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setBoxcarFreq</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setBoxcarFreq</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getCycleTime</Name>
+      <Return>num</Return>
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$alterAtc</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setInertia</Name>
+      <Return>num</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="trsf" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="false" collectionName="true" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getInertia</Name>
+      <Return>num</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="trsf" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="false" collectionName="true" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setInertia</Name>
+      <Return>num</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="trsf" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="num" dataRef="false" collectionName="true" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getInertia</Name>
+      <Return>num</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="trsf" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="num" dataRef="false" collectionName="true" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setFriction</Name>
+      <Return>bool</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$computeJntFrc</Name>
+      <Return>void</Return>
+      <Param index="0" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Param index="2" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Param index="3" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getFeedForward</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getDrvFeedFwd</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$externalForce</Name>
+      <Return>void</Return>
+      <Param index="0" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Param index="3" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$keepJ1LoseRz</Name>
+      <Return>bool</Return>
+      <Param index="0" type="point" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="point" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="joint" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$getLimits</Name>
+      <Return>void</Return>
+      <Param index="0" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setMaxJointVel</Name>
+      <Return>bool</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setMaxTvel</Name>
+      <Return>num</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setCartJogAcc</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+  </Functions>
+</Language>

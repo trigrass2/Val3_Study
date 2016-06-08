@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sio>
+  <socketClt>
+    <String name="name" value="StlClient" />
+    <String name="desc" value="" />
+    <Inet name="serverIp" value="127.0.0.1" />
+    <Uint name="portNumber" value="1000" />
+    <Int name="endOfString" value="20" />
+    <Float name="timeOut" value="0" />
+    <Bool name="nagle" value="true" />
+  </socketClt>
+  <socketSrv>
+    <String name="name" value="StlServer" />
+    <String name="desc" value="" />
+    <Uint name="portNumber" value="2000" />
+    <Int name="endOfString" value="13" />
+    <Float name="timeOut" value="5" />
+    <Bool name="nagle" value="true" />
+  </socketSrv>
+</sio>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Language xmlns="http://www.staubli.com/robotics/VAL3/1" >
+  <Version>s7.9</Version>
+  <Data>
+  </Data>
+  <Functions>
+    <Func>
+      <Name>$calibrate</Name>
+      <Return>bool</Return>
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$unCalibrate</Name>
+      <Return>void</Return>
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$recover</Name>
+      <Return>bool</Return>
+      <Param index="0" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$recover</Name>
+      <Return>bool</Return>
+      <Param index="0" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="bool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="bool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="bool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setOffset</Name>
+      <Return>bool</Return>
+      <Param index="0" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$jogContext</Name>
+      <Return>void</Return>
+      <Param index="0" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="frame" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$jogj</Name>
+      <Return>void</Return>
+      <Param index="0" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$jogj</Name>
+      <Return>void</Return>
+      <Param index="0" type="point" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$jogl</Name>
+      <Return>void</Return>
+      <Param index="0" type="point" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$Xjogj</Name>
+      <Return>void</Return>
+      <Param index="0" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$Xjogj</Name>
+      <Return>void</Return>
+      <Param index="0" type="point" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$Xjogl</Name>
+      <Return>void</Return>
+      <Param index="0" type="point" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+  </Functions>
+</Language>

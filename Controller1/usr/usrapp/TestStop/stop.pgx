@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="stop">
+    <Code><![CDATA[begin
+  //当程序运行完会自动调用stop程序
+  //当按下stop键时会调用stop程序
+  popUpMsg("调用stop程序")
+  
+  
+end]]></Code>
+  </Program>
+</Programs>

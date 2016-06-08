@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="ReadMe" access="private" >
+    <Code><![CDATA[begin
+  //对于Socket的客户端与服务器
+  //可以使用Val3语言进行配置与可以
+
+  //1.USR/configs/sio.cfx进行配置
+  //2.在menu/控制面板/输入输出/接口列表中进行自定义配置
+
+
+  //客户端要配置所要链接的服务器的IP和端口
+
+  //服务器要配置端口
+
+  //当sio.cfx进行配置好
+
+  //同一个机器人上客户端的IP不要设为127.0.0.1 否则容易形成内环
+
+
+  //sio.cfx格式
+  //  <?xml version="1.0" encoding="utf-8" ?>
+  //<sio>
+  //  <socketClt>
+  //    <String name="name" value="StlClient" />
+  //    <String name="desc" value="" />
+  //    <Inet name="serverIp" value="127.0.0.1" />
+  //    <Uint name="portNumber" value="1000" />
+  //    <Int name="endOfString" value="20" />
+  //    <Float name="timeOut" value="0" />
+  //    <Bool name="nagle" value="true" />
+  //  </socketClt>
+  //  <socketSrv>
+  //    <String name="name" value="StlServer" />
+  //    <String name="desc" value="" />
+  //    <Uint name="portNumber" value="2000" />
+  //    <Int name="endOfString" value="13" />
+  //    <Float name="timeOut" value="5" />
+  //    <Bool name="nagle" value="true" />
+  //  </socketSrv>
+  //</sio>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end]]></Code>
+  </Program>
+</Programs>

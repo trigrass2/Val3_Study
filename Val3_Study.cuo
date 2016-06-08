@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CellUserOptions>
+  <Controller Name="Controller1">
+    <Application>Disk://StaubliSocket/StaubliSocket.pjx</Application>
+    <Application>Disk://MoveId/MoveId.pjx</Application>
+  </Controller>
+  <Option Name="DataTreeView" />
+  <Option Name="CellExplorer">
+    <Nodes>
+      <Node Path="Val3_Study" IsExpanded="true" />
+      <Node Path="Val3_Study\Controller1" IsExpanded="true" />
+      <Node Path="Val3_Study\Controller1\MoveId" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="GeometryView">
+    <Nodes>
+      <Node Path="Val3_Study" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="SynchronizerMode">
+    <Synchronizers>
+      <Synchronizer Controller="Controller1" Mode="Emulator" />
+    </Synchronizers>
+  </Option>
+  <Option Name="3DView">
+    <_3DView Visible="false" />
+  </Option>
+</CellUserOptions>

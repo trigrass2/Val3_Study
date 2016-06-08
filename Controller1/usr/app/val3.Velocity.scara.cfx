@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Language xmlns="http://www.staubli.com/robotics/VAL3/1" >
+  <Version>s7.9</Version>
+  <Data>
+  </Data>
+  <Functions>
+    <Func>
+      <Name>$velFrame</Name>
+      <Return>num</Return>
+      <Param index="0" type="frame" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="mdesc" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$velTool</Name>
+      <Return>num</Return>
+      <Param index="0" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="mdesc" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$velJoint</Name>
+      <Return>void</Return>
+      <Param index="0" type="tool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="mdesc" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$setVelCmd</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+  </Functions>
+</Language>

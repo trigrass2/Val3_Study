@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Language xmlns="http://www.staubli.com/robotics/VAL3/1" >
+  <Version>s7.9</Version>
+  <Data>
+  </Data>
+  <Functions>
+    <Func>
+      <Name>$recAdd</Name>
+      <Return>void</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$recClean</Name>
+      <Return>void</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$recSize</Name>
+      <Return>void</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$recStart</Name>
+      <Return>void</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$recStop</Name>
+      <Return>num</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$recStore</Name>
+      <Return>bool</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$recLoad</Name>
+      <Return>num</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$recVarList</Name>
+      <Return>void</Return>
+      <Param index="0" type="string" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$recWait</Name>
+      <Return>void</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$recGetVar</Name>
+      <Return>num</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$recReadVar</Name>
+      <Return>num</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Function</Class>
+    </Func>
+    <Func>
+      <Name>$recWriteVar</Name>
+      <Return>num</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$gsmTest</Name>
+      <Return>void</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="5" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$gsmLoad</Name>
+      <Return>bool</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$backlashTest</Name>
+      <Return>void</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$backlashTest</Name>
+      <Return>void</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$backlashLoad</Name>
+      <Return>void</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$backlashUpdate</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Param index="1" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$backlashClean</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$vregTest</Name>
+      <Return>void</Return>
+      <Param index="0" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="5" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="6" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$vregTest</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="true" dictionary="false" arrayDim="1" />
+      <Param index="1" type="joint" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="5" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="6" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="7" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$slotTest</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$slotTest</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="num" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$slotLoad</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$slotLoad</Name>
+      <Return>void</Return>
+      <Param index="0" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="num" dataRef="true" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$asmSave</Name>
+      <Return>string</Return>
+      <Param index="0" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="1" type="string" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="2" type="bool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="3" type="bool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="4" type="bool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Param index="5" type="bool" dataRef="false" collectionName="false" subCollection="false" array="false" dictionary="false" arrayDim="0" />
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+    <Func>
+      <Name>$asmClean</Name>
+      <Return>void</Return>
+      <Lib>false</Lib>
+      <Class>Modifier</Class>
+    </Func>
+  </Functions>
+</Language>

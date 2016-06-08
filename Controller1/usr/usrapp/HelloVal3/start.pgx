@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="start">
+    <Code><![CDATA[
+begin
+  //1.注释不能写在begin上面
+  //2.注释不能写在end下面
+  //3.语句后面没有分号也没有冒号
+  
+  popUpMsg("Hello world")
+  
+  
+end
+
+
+
+
+
+
+]]></Code>
+  </Program>
+</Programs>
