@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="Postion">
+    <Locals>
+      <Local name="l_nStart" type="num" xsi:type="array" size="1" />
+      <Local name="l_sBuff" type="string" xsi:type="array" size="1" />
+      <Local name="l_nNum" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+
+  //运动堆栈不为空
+  wait(!isEmpty())
+
+  l_nStart=clock()
+  
+  //先关掉所有文件
+  //保证每次只操作一个文件
+  $fileClose(0)
+  $fileClose(1)
+  $fileClose(2)
+  $fileClose(3)
+  $fileClose(4)
+  $fileClose(5)
+  $fileClose(6)
+  $fileClose(7)
+  $fileClose(8)
+  $fileClose(9)
+  
+  
+  
+  
+  nFileID=$fileOpen("Disk://postion.txt","w")
+  if nFileID<0 or nFileID>9
+    popUpMsg("文件错误")
+    return
+  endIf
+  
+  
+  l_nNum=0
+  
+  while isEmpty()==false
+    
+    //获取当前关节位置
+    jNow=herej()
+    
+    //获取当前坐标系位置
+    pNow=here(tTool,world)  
+    getJointForce(nJointForce)
+    if l_nNum<1000
+      nForceData[l_nNum,0]=nJointForce[0]
+      nForceData[l_nNum,1]=nJointForce[1]
+      nForceData[l_nNum,2]=nJointForce[2]
+      nForceData[l_nNum,3]=nJointForce[3]
+      nForceData[l_nNum,4]=nJointForce[4]
+      nForceData[l_nNum,5]=nJointForce[5]
+    endIf
+    
+    
+    l_nNum=l_nNum+1
+    l_sBuff=toString(".3",jNow.j1)+","+toString(".3",jNow.j2)+","+toString(".3",jNow.j3)+","
+    l_sBuff=l_sBuff+toString(".3",jNow.j4)+","+toString(".3",jNow.j5)+","+toString(".3",jNow.j6)+","
+    l_sBuff=l_sBuff+toString(".3",pNow.trsf.x)+","+toString(".3",pNow.trsf.y)+","+toString(".3",pNow.trsf.z)+","
+    l_sBuff=l_sBuff+toString(".3",pNow.trsf.rx)+","+toString(".3",pNow.trsf.ry)+","+toString(".3",pNow.trsf.rz)+","
+    l_sBuff=l_sBuff+toString(".3",clock()-l_nStart)+","+toString("",l_nNum)
+    
+    
+    
+    
+    if $fileSet(nFileID,l_sBuff,1)!=1
+      popUpMsg("error")
+      return
+    endIf
+    
+    
+    
+    delay(0)
+  endWhile
+  
+  for l_nNum=0 to 9999
+    
+    
+ endFor
+  
+  
+  
+  
+  $fileClose(0)
+  $fileClose(1)
+  $fileClose(2)
+  $fileClose(3)
+  $fileClose(4)
+  $fileClose(5)
+  $fileClose(6)
+  $fileClose(7)
+  $fileClose(8)
+  $fileClose(9)
+  
+  
+ popUpMsg("运行时间："+toString(".3",clock()-l_nStart))
+
+
+
+
+
+
+
+
+
+
+end]]></Code>
+  </Program>
+</Programs>

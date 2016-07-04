@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="View">
+    <Code><![CDATA[begin
+  //显示出结果
+  //清屏
+  cls()
+  //跳到用户界面
+  userPage()
+
+
+  gotoxy(0,0)
+  put("机械手臂当前位置:")
+
+  while true
+    gotoxy(0,1)
+    put("J1:"+toString(".3",jNow.j1)+"      ")
+
+    gotoxy(0,2)
+    put("J2:"+toString(".3",jNow.j2)+"      ")
+
+    gotoxy(0,3)
+    put("J3:"+toString(".3",jNow.j3)+"      ")
+    gotoxy(0,4)
+    put("J4:"+toString(".3",jNow.j4)+"      ")
+    gotoxy(0,5)
+    put("J5:"+toString(".3",jNow.j5)+"      ")
+    gotoxy(0,6)
+    put("J6:"+toString(".3",jNow.j6)+"      ")
+
+
+    //坐标系
+
+    gotoxy(0,7)
+    put("X:"+toString(".3",pNow.trsf.x)+"      ")
+
+    gotoxy(0,8)
+    put("Y:"+toString(".3",pNow.trsf.y)+"      ")
+
+    gotoxy(0,9)
+    put("Z:"+toString(".3",pNow.trsf.z)+"      ")
+
+    gotoxy(0,10)
+    put("RX:"+toString(".3",pNow.trsf.rx)+"      ")
+
+    gotoxy(0,11)
+    put("RY:"+toString(".3",pNow.trsf.ry)+"      ")
+    gotoxy(0,12)
+    put("RZ:"+toString(".3",pNow.trsf.rz)+"      ")
+
+
+
+
+    delay(0)
+
+
+  endWhile
+
+
+
+
+
+
+
+
+
+end]]></Code>
+  </Program>
+</Programs>

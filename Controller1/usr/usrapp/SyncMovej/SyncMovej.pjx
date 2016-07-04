@@ -2,13 +2,11 @@
 <Project xmlns="http://www.staubli.com/robotics/VAL3/Project/3">
   <Parameters version="s7.9" stackSize="5000" millimeterUnit="true" />
   <Programs>
-    <Program file="Carterblend.pgx" />
-    <Program file="JointBlend.pgx" />
     <Program file="start.pgx" />
     <Program file="stop.pgx" />
   </Programs>
   <Database>
-    <Data file="Blend.dtx" />
+    <Data file="SyncMovej.dtx" />
   </Database>
   <Libraries />
 </Project>

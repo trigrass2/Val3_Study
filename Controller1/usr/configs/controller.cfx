@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <controller>
   <String name="testMode" value="Demo" />
   <Bool name="buildBio" value="true" />
@@ -17,9 +17,9 @@
   <String name="UserApp" value="usrapp" />
   <String name="templateDir" value="templates" />
   <Bool name="buildStarc2" value="true" />
-  <starc2Slot index="0" board="" />
-  <starc2Slot index="1" board="" />
-  <starc2Slot index="2" board="" />
+  <starc2Slot index="0"  board="" />
+  <starc2Slot index="1"  board="" />
+  <starc2Slot index="2"  board="" />
   <uniVALparams>
     <String name="config" value="axis" />
     <String name="fieldbus" value="" />
@@ -33,5 +33,5 @@
   <Float name="powerShutdownDelay" value="-1" />
   <String name="standardFiles" value="" />
   <Float name="lliCycleTime" value="-1" />
-  <Float name="powerHourCount" value="5.004444" />
+  <Float name="powerHourCount" value="17.822117" />
 </controller>

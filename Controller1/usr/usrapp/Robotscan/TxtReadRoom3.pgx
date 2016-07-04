@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="TxtReadRoom3" access="private" >
+    <Locals>
+      <Local name="l_str" type="string" xsi:type="array" size="1" />
+      <Local name="nNumpoint" type="num" xsi:type="array" size="1" />
+      <Local name="ntext" type="num" xsi:type="array" size="1" />
+      <Local name="sTxtfile" type="string" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+
+  $fileClose(0)
+  $fileClose(1)
+  $fileClose(2)
+  $fileClose(3)
+  $fileClose(4)
+  $fileClose(5)
+  $fileClose(6)
+  $fileClose(7)
+  $fileClose(8)
+  $fileClose(9)
+
+
+  bTxt3=false
+  delay(0)
+  l_str=toString("1",n_sTxt)
+  sTxtfile="Disk://Robotscan/path"+l_str+".txt"
+  ntext=$fileOpen(sTxtfile,"r")
+  if ntext<0 or ntext>9
+    popUpMsg("读取文件出错"+sTxtfile)
+    return
+  endIf
+
+
+  for nNumpoint=1000 to 1499
+    $fileGet(ntext,sString[nNumpoint],1)
+    if sString[nNumpoint]!=""
+      call stringtopoint(sString[nNumpoint],nNumpoint)
+    else
+    endIf
+  endFor
+  delay(0)
+
+  if n_sTxt==nTxtTotal-1
+    n_sTxt=0
+  elseIf n_sTxt!=nTxtTotal-1
+    n_sTxt=n_sTxt+1
+  endIf
+  nNumpoint=nNumpoint-1
+  $fileClose(ntext)
+
+  $fileClose(0)
+  $fileClose(1)
+  $fileClose(2)
+  $fileClose(3)
+  $fileClose(4)
+  $fileClose(5)
+  $fileClose(6)
+  $fileClose(7)
+  $fileClose(8)
+  $fileClose(9)
+
+
+end]]></Code>
+  </Program>
+</Programs>

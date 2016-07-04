@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="Move" access="private" >
+    <Code><![CDATA[begin
+  //作用：运动指令运行
+
+  //运动堆栈初始化
+  resetMotion()
+
+  //等待机械手臂上电
+  wait(isPowered())
+
+  //关节点运动
+  movej(j1,tTool,mMdesc)
+
+  //坐标点运动
+  movel(p1,tTool,mMdesc)
+
+  //等待运动指令完成
+  waitEndMove()
+
+
+
+
+
+
+
+end]]></Code>
+  </Program>
+</Programs>

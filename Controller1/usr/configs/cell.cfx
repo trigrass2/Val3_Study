@@ -54,7 +54,7 @@
   <Bool name="parkCheckInAutoMode" value="false" />
   <String name="robotName" value="" />
   <autoStart name="" location="" />
-  <String name="initWorkingMode" value="remote" />
+  <String name="initWorkingMode" value="local" />
   <CellDynamicParams>
     <VectCart name="gravity" x="0" y="0" z="-9.81" />
   </CellDynamicParams>
@@ -64,5 +64,5 @@
   <String name="T2_key" value="valve2" />
   <String name="T3_key" value="" />
   <String name="defaultUser" value="default" />
-  <Float name="monitorSpeed" value="10" />
+  <Float name="monitorSpeed" value="100" />
 </cell>

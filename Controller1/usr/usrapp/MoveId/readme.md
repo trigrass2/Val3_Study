@@ -6,6 +6,7 @@
 4. reach决定moveid的下限，leave决定moveid的上限
 5. waitendmove的上限为1
 6. 相同的位置的moveid也叠加,查看SameInstruct
-7. setmoveid(num) num必须是自然数
+7. setmoveid(num) num可以设置为任何数，包括负数，小数
 8. 运动堆栈的大小
+9. setmoveid可以在运动进行时设置
 

@@ -24,4 +24,29 @@
     <String name="comMode" value="RS232" />
     <String name="flowControl" value="none" />
   </serialPort>
+  <socketSrv>
+    <String name="name" value="ss" />
+    <String name="desc" value="" />
+    <Uint name="portNumber" value="1000" />
+    <Int name="endOfString" value="13" />
+    <Float name="timeOut" value="5" />
+    <Bool name="nagle" value="false" />
+  </socketSrv>
+  <socketSrv>
+    <String name="name" value="sSocketout" />
+    <String name="desc" value="" />
+    <Uint name="portNumber" value="1000" />
+    <Int name="endOfString" value="13" />
+    <Float name="timeOut" value="5" />
+    <Bool name="nagle" value="false" />
+  </socketSrv>
+  <udpSocket>
+    <String name="name" value="udptest" />
+    <String name="desc" value="" />
+    <Inet name="connectIp" value="127.0.0.1" />
+    <Uint name="portNumber" value="1000" />
+    <Int name="endOfString" value="13" />
+    <Float name="timeOut" value="5" />
+    <Bool name="broadcast" value="true" />
+  </udpSocket>
 </sio>
