@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="Task4ms">
+    <Locals>
+      <Local name="l_bBool" type="bool" xsi:type="array" size="1" />
+      <Local name="l_nNum" type="num" xsi:type="array" size="1" />
+      <Local name="l_sMess" type="string" xsi:type="array" size="1" />
+      <Local name="l_sS" type="string" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  
+  
+  resetMotion()
+  cls()
+  
+  
+  //把客户端收到不为空的信息通过服务器传送出去
+  
+  mNomSpeed.blend=off
+ // $movejSyncBegin(mNomSpeed)
+  while true
+    //获取当前的关节值
+    
+    jJ=$getJntFbk()
+    
+    l_sMess=toString(".3",clock())+":"+toString(".3",jJ.j1)+","+toString(".3",jJ.j2)+","+toString(".3",jJ.j3)+","+toString(".3",jJ.j4)+","+toString(".3",jJ.j5)+","+toString(".3",jJ.j6)
+    //发送数据
+    call ServerSend(l_sMess)
+    //收发位置
+    call ServerGet(l_sMess)
+    //在屏幕上显示
+    if l_sMess!="" and find(l_sMess,",")>0
+      
+      //打印出来
+      userPage()
+      gotoxy(1,5)
+      put("服务器端收到PC信息:")
+      gotoxy(1,6)
+      put(l_sMess+"             ")
+      
+      //2014.12.24
+      //
+      
+      //***************************
+      //分割数据
+      l_nNum=0
+      while find(l_sMess,",")>0
+        l_sS=left(l_sMess,find(l_sMess,","))
+        l_sMess=right(l_sMess,len(l_sMess)-len(l_sS)-1)
+        toNum(l_sS,nPcNum[l_nNum],l_bBool)
+        if !l_bBool
+          disablePower()
+        endIf
+        l_nNum=l_nNum+1
+      endWhile
+      //***************************
+      
+      jJ.j1=nPcNum[0]
+      jJ.j2=nPcNum[1]
+      jJ.j3=nPcNum[2]
+      jJ.j4=nPcNum[3]
+      jJ.j5=nPcNum[4]
+      jJ.j6=nPcNum[5]
+      
+      
+     // $movejSync(jJ)
+      
+      
+      
+      
+      
+      
+      
+      //      
+    endIf
+    delay(0)
+  endWhile
+ // $movejSyncEnd()
+  
+  
+  
+  
+end
+      ]]></Code>
+  </Program>
+</Programs>

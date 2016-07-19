@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns="http://www.staubli.com/robotics/VAL3/Project/3" >
-  <Parameters version="s7.6" stackSize="5000" millimeterUnit="true" />
+  <Parameters version="s7.7" stackSize="5000" millimeterUnit="true" />
   <Programs>
-    <Program file="ClientGet.pgx" />
-    <Program file="ClientSend.pgx" />
     <Program file="ReadMe.pgx" />
     <Program file="ServerGet.pgx" />
     <Program file="ServerSend.pgx" />
+    <Program file="Task4ms.pgx" />
     <Program file="start.pgx" />
     <Program file="stop.pgx" />
   </Programs>

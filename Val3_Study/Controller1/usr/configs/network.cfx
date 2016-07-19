@@ -12,7 +12,7 @@
   <Uint name="telnetPort" value="23" />
   <soapServer>
     <String name="host" value="" />
-    <Uint name="port" value="851" />
+    <Uint name="port" value="5653" />
     <Int name="sendTimeout" value="60" />
     <Int name="receiveTimeout" value="1" />
     <Int name="acceptTimeout" value="0" />

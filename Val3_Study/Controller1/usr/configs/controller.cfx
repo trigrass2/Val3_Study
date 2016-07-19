@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <controller>
   <String name="testMode" value="Demo" />
-  <Bool name="buildBio" value="true" />
-  <Bool name="buildBio2" value="true" />
-  <Bool name="buildMio" value="true" />
+  <Bool name="buildBio" value="false" />
+  <Bool name="buildBio2" value="false" />
+  <Bool name="buildMio" value="false" />
   <Bool name="buildCio" value="false" />
   <String name="cioBoardConfig" value="" />
-  <Bool name="buildSerial1" value="true" />
-  <Bool name="buildSerial2" value="true" />
+  <Bool name="buildSerial1" value="false" />
+  <Bool name="buildSerial2" value="false" />
   <Bool name="buildSerial3" value="false" />
   <Bool name="buildSerial4" value="false" />
   <Bool name="buildSerial5" value="false" />
@@ -33,5 +33,5 @@
   <Float name="powerShutdownDelay" value="-1" />
   <String name="standardFiles" value="" />
   <Float name="lliCycleTime" value="-1" />
-  <Float name="powerHourCount" value="17.822117" />
+  <Float name="powerHourCount" value="20.979553" />
 </controller>

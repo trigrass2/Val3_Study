@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="start" access="private" >
+    <Locals>
+      <Local name="l_ncIoStatus" type="num" xsi:type="array" size="1" />
+      <Local name="l_nsIoStatus" type="num" xsi:type="array" size="1" />
+      <Local name="l_sMess" type="string" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  // 对套接字socket的客户端和服务器进行发送与接收信息
+  //Input parameters
+  //
+  //Output paramaters
+  //Example
+  // 直接运行
+  //History
+  //  Creation : 2014.1.26 y.ye@staubli.com
+  //Header end
+  //-----------------------------------------------------------------------
+  //运行程序注意事项：
+  //先运行SOCKET程序上的服务器，然后在运行val3 staubliSocket,
+  //再连接socket程序的客户端
+
+
+  //界面初始化
+  cls()
+  title("测试Socket通讯:")
+  gotoxy(1,1)
+  put("程序已经运行:")
+  userPage()
+
+  //  //客户端
+  //  l_ncIoStatus=ioStatus(sClient)
+  //  gotoxy(1,3)
+  //  put("客户端状态:"+toString("",l_ncIoStatus)+"      ")
+
+  //服务器
+  l_nsIoStatus=ioStatus(sServer)
+  gotoxy(1,4)
+  put("服务器状态:"+toString("",l_nsIoStatus)+"      ")
+
+  //判断状态
+  if l_ncIoStatus!=0
+    popUpMsg("套接字不正确")
+    return
+  endIf
+
+  //没有ClearBuffer 这个比较难联通
+  clearBuffer(sServer)
+
+  //同步任务建立
+  taskCreateSync "TIME",0.004,bBool,Task4ms()
+
+
+
+end]]></Code>
+  </Program>
+</Programs>
